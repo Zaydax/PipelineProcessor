@@ -1,0 +1,7 @@
+.ORIG x1234
+LDB R0, R6, #0 
+LDB R0, R6, #0 
+LDB R0, R6, #0 
+LDB R0, R6, #0 
+LDB R0, R6, #0 
+.END

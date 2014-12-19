@@ -1,0 +1,7 @@
+.ORIG x1234
+ADD R1, R1, x-5
+ADD R2, R2, x-5
+ADD R3, R3, x-5
+ADD R4, R4, x-5
+ADD R5, R5, x-5
+.END

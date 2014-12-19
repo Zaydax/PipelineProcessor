@@ -1,0 +1,74 @@
+
+Current register/bus values :
+
+Current architectural state :
+-------------------------------------
+Cycle Count     : 7
+PC              : 0x123e
+CCs: N = 0  Z = 0  P = 1
+Registers:
+0: 0x0000
+1: 0x0006
+2: 0x0002
+3: 0x0003
+4: 0x0004
+5: 0x0005
+6: 0x123a
+7: 0xabcd
+
+------------- Stall Signals -------------
+ICACHE_R        :  1
+DEP_STALL       :  0
+V_DE_BR_STALL   :  1
+V_AGEX_BR_STALL :  0
+MEM_STALL       :  0
+V_MEM_BR_STALL  :  0
+
+------------- DE   Latches --------------
+DE_NPC          :  0x1240
+DE_IR           :  0x12c3
+DE_V            :  0
+
+------------- AGEX Latches --------------
+AGEX_NPC        :  0x123e
+AGEX_SR1        :  0x123a
+AGEX_SR2        :  0x0000
+AGEX_CC         :  1
+AGEX_IR         :  0x4180
+AGEX_DRID       :  7
+AGEX_CS         :  10001000001010001010
+AGEX_V          :  1
+
+------------- MEM  Latches --------------
+MEM_NPC         :  0x123c
+MEM_ALU_RESULT  :  0x0006
+MEM_ADDRESS     :  0x0186
+MEM_CC          :  2
+MEM_IR          :  0x12c3
+MEM_DRID        :  1
+MEM_CS          :  00000001111
+MEM_V           :  1
+
+------------- SR   Latches --------------
+SR_NPC          :  0x123a
+SR_DATA         :  0x0000
+SR_ALU_RESULT   :  0x0006
+SR_ADDRESS      :  0x0186
+SR_IR           :  0x12c3
+SR_DRID         :  1
+SR_CS           :  1111
+SR_V            :  1
+
+
+Memory content [0x1234..0x1244] :
+-------------------------------------
+ 0x1234 (4660) : 0x12c3
+ 0x1236 (4662) : 0x12c3
+ 0x1238 (4664) : 0x12c3
+ 0x123a (4666) : 0x12c3
+ 0x123c (4668) : 0x4180
+ 0x123e (4670) : 0x12c3
+ 0x1240 (4672) : 0x12c3
+ 0x1242 (4674) : 0x12c3
+ 0x1244 (4676) : 0x12c3
+

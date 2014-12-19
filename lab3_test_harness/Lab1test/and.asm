@@ -1,0 +1,25 @@
+	.ORIG x3000
+	AND R1, R1, #0
+	ADD R2, R1, #1
+	ADD R2, R2, R2
+	ADD R2, R1, #1
+	ADD R2, R2, R2
+	ADD R2, R1, #1
+	ADD R2, R2, R2
+	ADD R2, R1, #1
+	ADD R2, R2, R2
+	ADD R2, R1, #1
+	ADD R2, R2, R2
+	ADD R2, R1, #1
+	ADD R2, R2, R2
+	ADD R2, R1, #1
+	ADD R2, R2, R2
+	ADD R2, R1, #1
+	ADD R2, R2, R2
+	ADD R2, R1, #1
+	ADD R3, R2, R2
+	AND R2, R2, #7
+	ADD R4, R3, R3
+	AND R4, R4, R2
+	HALT
+	.END

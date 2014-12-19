@@ -1,0 +1,7 @@
+.ORIG x1234
+STW R7, R6, #2 
+STW R7, R6, #2 
+STW R7, R6, #2 
+STW R7, R6, #2 
+STW R7, R6, #2 
+.END

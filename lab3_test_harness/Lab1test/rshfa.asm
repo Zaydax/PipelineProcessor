@@ -1,0 +1,13 @@
+       .ORIG x3000
+	LEA R0, A
+	LDW R0, R0, #0
+	RSHFA R1, R0, #0
+	RSHFA R2, R0, #3
+	RSHFA R3, R0, #5
+	RSHFA R4, R0, #8
+	RSHFA R5, R0, #9
+	RSHFA R6, R0, #13
+	RSHFA R7, R0, #15
+	HALT
+A	.FILL xdefa
+	.END

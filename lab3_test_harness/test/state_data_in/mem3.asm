@@ -1,0 +1,12 @@
+	.ORIG x3000
+ME	LEA R0, ME
+	LDW R6, R0, #0
+	BRnz SKIP
+	HALT
+SKIP	LDB R1, R0, #1
+	LDB R2, R0, #3
+	LDB R3, R0, #5
+	LDW R5, R0, #3		;  R5 = f025
+	STW R5, R0, #0
+	JSR ME
+	.END

@@ -1,0 +1,4 @@
+.ORIG x1234
+TRAP x25
+ADD R1, R3, R3
+.END

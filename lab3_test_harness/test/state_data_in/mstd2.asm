@@ -1,0 +1,19 @@
+.ORIG x1234
+LDW R0, R6, #0 
+LDW R0, R6, #0 
+LDW R0, R6, #0
+LDW R0, R6, #0 
+LDW R0, R6, #0
+LDW R0, R6, #0 			
+LDW R0, R6, #0 
+LDW R0, R0, #0
+LDW R1, R0, #0 
+LDW R2, R1, #0 
+LDW R3, R2, #0 
+LDW R4, R3, #0 
+LDW R5, R4, #0
+LDW R6, R5, #0 
+LDW R0, R6, #0 
+LDW R1, R0, #0 
+LDW R2, R1, #0		
+.END

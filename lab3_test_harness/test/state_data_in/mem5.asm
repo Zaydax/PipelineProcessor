@@ -1,0 +1,27 @@
+	.ORIG x3000
+	LEA R0, LOOP
+	ADD R1, R7, #-14
+	ADD R2, R0, #10
+	XOR R3, R0, R7
+	XOR R4, R3, R5
+	RSHFA R5, R7, #7
+LOOP	STW R0, R6, #-4
+	STW R1, R6, #-3
+	STW R2, R6, #-2
+	STW R3, R6, #-1
+	STW R4, R6, #0
+	STW R5, R6, #1
+	STW R6, R6, #2
+	STW R7, R6, #3
+	STB R0, R6, #-4
+	STB R1, R6, #-3
+	STB R2, R6, #-2
+	STB R3, R6, #-1
+	STB R4, R6, #0
+	STB R5, R6, #1
+	STB R6, R6, #2
+	STB R7, R6, #3
+	JMP R0
+	HALT
+	.END
+

@@ -1,0 +1,11 @@
+	.ORIG x3000
+	ADD R0, R0, #5
+LOOP	ADD R3, R3, R2
+	ADD R0, R0, #-1
+	BRnz DONE
+	BRnzp LOOP
+DONE    LEA R5, LOOP
+	LEA R6, DONE
+	ADD R5, R6, R5
+	.END
+		

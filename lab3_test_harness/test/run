@@ -1,0 +1,21 @@
+#!/usr/bin/expect -f
+#send_user "a [lrange $argv 0 0]\n"
+#send_user "b [lrange $argv 1 1]\n"
+#send_user "c [lrange $argv 2 2]\n"
+
+set timeout 2
+spawn [lrange $argv 0 0] [lrange $argv 1 1] [lrange $argv 2 2]
+expect "LC-3b-SIM"
+send "r [lrange $argv 3 3]\r"
+expect {
+	timeout {send_user "infiniteloop\r"; exit 1; }
+	"LC-3b-SIM"
+}
+send "i\r"
+expect "LC-3b-SIM"
+
+send "md 0x1234 0x1244\r"
+expect "LC-3b-SIM"
+
+send "q\r"
+interact

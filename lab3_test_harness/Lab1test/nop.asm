@@ -1,0 +1,5 @@
+	.ORIG x3000
+	NOP
+	NOP
+	HALT
+	.END

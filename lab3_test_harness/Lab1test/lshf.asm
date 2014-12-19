@@ -1,0 +1,12 @@
+       .ORIG x3000
+	AND R0, R0, #0
+	ADD R0, R0, xa
+	LSHF R1, R0, #0
+	LSHF R2, R0, #3
+	LSHF R3, R0, #5
+	LSHF R4, R0, #8
+	LSHF R5, R0, #9
+	LSHF R6, R0, #13
+	LSHF R7, R0, #15
+	HALT
+	.END

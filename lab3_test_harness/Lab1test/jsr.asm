@@ -1,0 +1,11 @@
+	.ORIG x3000
+	AND R0, R0, #0
+	ADD R0, R0, #5
+	LEA R7, B
+	JSR A
+	ADD R0, R0, #5
+	HALT
+A	ADD R0, R0, #5 
+	RET
+B	HALT
+	.END
